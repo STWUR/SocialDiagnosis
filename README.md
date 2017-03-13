@@ -1,0 +1,1 @@
+# Diagnoza spoleczna

@@ -1,0 +1,22 @@
+Package: SocialDiagnosis
+Type: Package
+Title: Processing of data from Social Diagnosis (Diagnoza Spoleczna)
+Version: 0.9
+Authors@R: c(
+    person("Michal", "Burdukiewicz",
+    role = c("aut")),
+    person("Piotr", "Sobczyk",
+    email = "sobbombo@gmail.com",
+    role = c("cre", "aut")),
+    person("STWUR", "(Stowarzyszenie Wroclawskich Uzytkownikow R)",
+    role = "ctb"))
+Description: Social Diagnosis (Diagnoza Spoleczna) is a country-wide
+    study of the objective and subjective quality of life in Poland
+    between 2000 and 2015. The package supports acquisition and
+    processing of data from Social Diagnosis and supplemental data
+    sets (e.g., borders of statistical regions in Poland). The package
+    documentation is written in Polish.
+LazyData: yes
+License: MIT
+Encoding: UTF-8
+RoxygenNote: 5.0.1
