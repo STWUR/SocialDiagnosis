@@ -13,13 +13,19 @@ download_diagnosis <- function(dir_name = "diagnosis_data") {
 
   dir.create(dir_name)
 
-  # can_download1 <- download.file(url = "https://github.com/STWUR/Diagnoza_dane/raw/master/osoby.RData",
-  #                               destfile = paste0(dir_name, "/osoby.RData"))
-  can_download2 <- download.file(url = "https://github.com/STWUR/Diagnoza_dane/raw/master/osobyDict.RData",
-                                 destfile = paste0(dir_name, "/osobyDict.RData"))
+  if(language == "PL") {
+    can_download1 <- download.file(url = "https://github.com/STWUR/Diagnoza_dane/raw/master/osoby.RData",
+                                   destfile = paste0(dir_name, "/osoby.RData"))
+    can_download2 <- download.file(url = "https://github.com/STWUR/Diagnoza_dane/raw/master/osobyDict.RData",
+                                   destfile = paste0(dir_name, "/osobyDict.RData"))
+  }
 
-  # if(can_download1 + can_download2 != 0)
-  #   stop("Cannot download data. Check the internet connection.")
+  if(language == "EN") {
+    stop("Not supported (yet).")
+  }
+
+  if(can_download1 + can_download2 != 0)
+    stop("Cannot download data. Check the internet connection.")
 
   invisible(0)
 }

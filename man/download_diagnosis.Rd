@@ -4,7 +4,7 @@
 \alias{download_diagnosis}
 \title{Download data from Social Diagnosis}
 \usage{
-download_diagnosis(dir_name = "diagnoza_data")
+download_diagnosis(dir_name = "diagnosis_data")
 }
 \arguments{
 \item{dir_name}{target directory for data.}
